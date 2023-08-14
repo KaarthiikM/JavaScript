@@ -55,3 +55,63 @@
    ```
 
 For modern code, it's generally recommended to use `let` and `const` over `var`. Use `let` when you need to reassign a variable's value, and use `const` when the value shouldn't change after assignment. This practice helps improve code readability and maintainability.
+<hr>
+
+
+| Primitive DataType |~Are Immutable |~Checks Value |
+| ------------------ |------------- | ------------ |
+| Number | String | Boolean |
+| Undefined | Null | Symbol |
+
+Primitive data types are the building blocks for more complex data structures and values in JavaScript. Unlike objects, primitive values are immutable, which means they cannot be changed directly; any operation on them creates a new value rather than modifying the existing one. Checks value not reference unlike non-primitive.<br><br>
+In JavaScript, there are six primitive data types:
+
+1. **Number:**
+   Can be int,float,negative,exponential, "NaN", "Infinity".
+   ```javascript
+   const age = -25;
+   const price = -99.99;
+   let scientificNum = 1.23e6; // 1.23 * 10^6 (1230000)
+   let positiveInfinity = Infinity;
+   console.log(positiveInfinity); // Infinity
+   console.log(-10 / 0); // -Infinity
+   console.log(1e308 * 2); // Infinity
+   let result1 = 0 / 0; // NaN
+   let result2 = "abc" * 2; // NaN
+   let result3 = Math.sqrt(-1); // NaN
+   let nanResult = NaN * 10; // NaN
+   let anotherNan = NaN + 5; // NaN
+   ```
+
+2. **String:**
+   Represents sequences of characters enclosed in single ('') or double ("") quotes.
+   ```javascript
+   const name = "Alice";
+   const message = 'Hello, ' + name;
+   ```
+
+3. **Boolean:**
+   Represents true or false values.
+   ```javascript
+   const isStudent = true;
+   const hasPermission = false;
+   ```
+
+4. **Undefined:**
+   Represents a variable that has been declared but hasn't been assigned a value.
+   ```javascript
+   let x; // x is undefined
+   ```
+
+5. **Null:**
+   Represents the intentional absence of any value or object.
+   ```javascript
+   const noValue = null;
+   ```
+
+6. **Symbol:**
+   Represents a unique and immutable value, often used as object property keys.
+   ```javascript
+   const id = Symbol("unique identifier");
+   ```
+
