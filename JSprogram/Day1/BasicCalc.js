@@ -1,6 +1,6 @@
 //Basic calc program
 
-let a=Number(prompt("Enter 1-add 2-sub 3-mul 4-div 5-rem:"))
+let a=Number(prompt("Enter 1-add 2-sub 3-mul 4-div 5-rem:"))  // Normally prompt only take a string if you want as a number you have to give it explicitly eg:parseInt
 switch(a){
     case 1:
         console.log(Number(prompt("num1:"))+Number(prompt("num2:")));
