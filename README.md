@@ -84,32 +84,37 @@ In JavaScript, there are six primitive data types:
    ```
 
 2. **String:**
-   Represents sequences of characters enclosed in single ('') or double ("") quotes.
+   Represents sequences of characters enclosed in single ('') or double ("") quotes.<br> Strings are immutable
    ```javascript
    const name = "Alice";
    const message = 'Hello, ' + name;
    ```
+   templating string:
+   ```javascript
+   console.log(`This template string by ${name}`);
+   console.log(`${5+3}`);
+   ```
 
-3. **Boolean:**
+4. **Boolean:**
    Represents true or false values.
    ```javascript
    const isStudent = true;
    const hasPermission = false;
    ```
 
-4. **Undefined:**
+5. **Undefined:**
    Represents a variable that has been declared but hasn't been assigned a value.
    ```javascript
    let x; // x is undefined
    ```
 
-5. **Null:**
+6. **Null:**
    Represents the intentional absence of any value or object.
    ```javascript
    const noValue = null;
    ```
 
-6. **Symbol:**
+7. **Symbol:**
    Represents a unique and immutable value, often used as object property keys.
    ```javascript
    const id = Symbol("unique identifier");
