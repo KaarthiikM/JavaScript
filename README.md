@@ -119,4 +119,70 @@ In JavaScript, there are six primitive data types:
    ```javascript
    const id = Symbol("unique identifier");
    ```
+<hr>
+
+| Type Conversions |
+| --------------- |
+<br>
+
+1. **String to Number:**
+   ```javascript
+   let str = "42";
+   let num = Number(str); // Converts string to number 42
+   ```
+
+2. **Number to String:**
+   ```javascript
+   let num = 42;
+   let str = String(num); // Converts number to string 42
+   ```
+
+3. **Boolean to String:**
+   ```javascript
+   let bool = true;
+   let str = String(bool); // Converts boolean to string ("true" or "false")
+   ```
+
+4. **String to Boolean:**
+   ```javascript
+   let str = "true";
+   let bool = Boolean(str); // Converts string to boolean (true if string is not empty)
+   ```
+
+5. **Number to Boolean:**
+   ```javascript
+   let num = 0;
+   let bool = Boolean(num); // Converts number to boolean (false if number is 0, true otherwise)
+   ```
+
+6. **Object to String:**
+   ```javascript
+   let obj = { key: "value" };
+   let str = String(obj); // Converts object to string "[object Object]"
+   ```
+
+7. **String to Object:**
+   ```javascript
+   let str = "{ key: 'value' }";
+   let obj = JSON.parse(str); // Converts JSON string to object
+   ```
+
+8. **Number to Object:**
+   ```javascript
+   let num = 42;
+   let obj = new Number(num); // Converts number to Number object
+   ```
+
+9. **Array to String:**
+   ```javascript
+   let arr = [1, 2, 3];
+   let str = arr.toString(); // Converts array to comma-separated string "1,2,3"
+   ```
+
+10. **String to Array:**
+    ```javascript
+    let str = "1,2,3";
+    let arr = str.split(","); // Converts comma-separated string to array [1, 2, 3]
+    ```
+
 
