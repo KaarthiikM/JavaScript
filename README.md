@@ -58,7 +58,7 @@ For modern code, it's generally recommended to use `let` and `const` over `var`.
 <hr>
 
 
-| Primitive DataType |~Are Immutable |~Checks Value |
+| Primitive DataType |->Are Immutable |->Checks Value |
 | ------------------ |------------- | ------------ |
 | Number | String | Boolean |
 | Undefined | Null | Symbol |
@@ -76,7 +76,7 @@ In JavaScript, there are six primitive data types:
    console.log(positiveInfinity); // Infinity
    console.log(-10 / 0); // -Infinity
    console.log(1e308 * 2); // Infinity
-   let result1 = 0 / 0; // NaN
+   let result1 = 0 / 0; // NaN(Not a Number)
    let result2 = "abc" * 2; // NaN
    let result3 = Math.sqrt(-1); // NaN
    let nanResult = NaN * 10; // NaN
@@ -184,5 +184,22 @@ In JavaScript, there are six primitive data types:
     let str = "1,2,3";
     let arr = str.split(","); // Converts comma-separated string to array [1, 2, 3]
     ```
+<br>
 
+| parseInt() | Number() |
+| -------- | ---------- |
 
+```javascript
+parseInt("123"); // Output: 123
+parseInt("010"); // Output: 10 (interpreted as decimal, not octal)
+parseInt("0xA"); // Output: 10 (interpreted as decimal)
+parseInt("12.34"); // Output: 12 (fractional part is ignored)
+```
+
+```javascript
+Number("123"); // Output: 123
+Number("010"); // Output: 10 (interpreted as decimal)
+Number("0xA"); // Output: NaN (not a valid decimal number)
+Number("12.34"); // Output: 12.34
+```
+<hr>
