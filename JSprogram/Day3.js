@@ -9,6 +9,8 @@ console.log(sum);
 let n = 10;
 let naturalnumber = n*(n+1)/2;
 console.log(naturalnumber);
+//sum of cubic series for n terms formula 1^3+2^3+3^3+...+N^3 = [n(n+1)/2]^2
+//sum of square series for n terms [n(n+1)(2n+1)]/6
 
 // Write a program to find the factorial of a number.
 
