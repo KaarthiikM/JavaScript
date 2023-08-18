@@ -19,6 +19,7 @@ for(let i=0;i<a.length;i++){
 }
 console.log(b)
 
+// Write a program to find the second-largest number in a list
 let a = [3, 90, 2, 33, 23, 65];
 let firstLargest = a[0];
 let secondLargest = a[1];
